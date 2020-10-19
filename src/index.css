@@ -1,13 +1,225 @@
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1, button {
+  font-family: 'DM Serif Display', serif;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.align-text-left {
+  text-align: left;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.lighter {
+  font-weight: light;
+  color: rgb(212, 209, 209);
+}
+
+
+.hero {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: url("./Images/diagmonds.png");
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-container {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(12, 12, 12, 0.8);
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.305);
+}
+
+.hero-container h1 {
+  border-top: 1.25px solid goldenrod;
+  padding: 2rem;
+  border-bottom: 1.25px solid goldenrod;
+  font-size: 4rem;
+}
+
+.hero-container h2 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.call-to-action {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.cta-button, .card-button {
+  background-color: transparent;
+  color: white;
+  padding: 1.5rem;
+  border-color: white;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.cta-button:hover, .card-button:hover {
+  border-color: gold;
+  color: gold;
+}
+
+.cta-1 {
+  background-color: gold;
+  color: black;
+  font-weight: bolder;
+  border-color: gold;
+}
+
+.cta-1:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.hero-image-grid {
+  display: grid;
+}
+
+.hero-image {
+  display: inline;
+  max-height: 500px;
+}
+
+.hero-image img {
+  min-height: 650px;
+  object-fit: cover;
+  max-width: 350px;
+  border: 0.5px solid rgba(253, 253, 253, 0.05);
+}
+
+.heading-txt {
+  color: black;
+  padding: 4rem;
+  font-size: 4rem;
+}
+
+.deal-page-container {
+  text-align: center;
+  background-color: rgb(238, 234, 234);
+}
+
+.deal-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.deal-card {
+  background-color: rgb(19, 19, 19);
+  padding: 2rem;
+  color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.deal-card-text {
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.premium-card {
+  background-color: rgb(255, 217, 0);
+  color: black;
+}
+
+.deal-card img {
+  max-width: 400px;
+}
+
+.card-premium-button {
+  color: black;
+  border-color: black;
+  font-weight: bold;
+}
+
+.card-premium-button:hover {
+  background-color: white;
+  border-color: white;
+  color: black
+}
+
+.process-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.process-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem;
+  background-color: white;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-card p {
+  margin-top: 1.5rem;
+  padding: 0rem 0 0 1.25rem;
+  border-left: 2px solid rgba(255, 217, 0, 0.877);
+}
+
+.process-card-image-container {
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.gallery-page-container{
+  text-align: center;
+  background-color: rgb(238, 234, 234);
+}
+.gallery{
+  width:85%;
+  margin:auto;
+}
+
+@media screen and (min-width: 3840px) {
+  .hero-image img {
+    min-height: 850px;
+    max-width: 650px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero-image img {
+    min-height: 700px;
+    max-width: 450px;
+  }
 }
