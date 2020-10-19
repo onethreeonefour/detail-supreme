@@ -1,7 +1,7 @@
 import React from 'react'
-import SLK from '../../Images/slk-red.png'
-import Arrive from '../../Images/arrive.jpg'
-import Inspect from '../../Images/inspect.jpg'
+import SLK from '../../Images/slk-red.webp'
+import Arrive from '../../Images/arrive.webp'
+import Inspect from '../../Images/inspect.webp'
 import Detailing from '../../Images/detailing.webp'
 import Supra from '../../Images/supra.webp'
 

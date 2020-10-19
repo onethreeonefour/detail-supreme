@@ -7,7 +7,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer'
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar/>
+
     <Landing/>
     <Footer/>
   </React.StrictMode>,

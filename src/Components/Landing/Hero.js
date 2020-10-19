@@ -1,6 +1,8 @@
 import React from 'react'
-import SLK from '../../Images/slk-gray.png'
-import GTR from '../../Images/gtr-orange.png';
+import BMW from '../../Images/bmw_m3.webp'
+import SLK_RED from '../../Images/slk-red.webp'
+import GTR_ORANGE from '../../Images/gtr-orange.webp';
+import SHELBY from '../../Images/shelby.webp';
 
 
 function Hero() {
@@ -16,8 +18,10 @@ function Hero() {
                 </div>
             </div>
             <div >
-                <div className="hero-image"><img src={GTR} alt="hero-image"></img></div>
-                <div className="hero-image"><img src={SLK} alt="hero-image"></img></div>
+                <div className="hero-image"><img src={GTR_ORANGE} alt="hero-image"></img></div>
+                <div className="hero-image"><img src={BMW} alt="hero-image"></img></div>
+                <div className="hero-image"><img src={SLK_RED} alt="hero-image"></img></div>
+                <div className="hero-image"><img src={SHELBY} alt="hero-image"></img></div>
             </div>
         </div>
     )

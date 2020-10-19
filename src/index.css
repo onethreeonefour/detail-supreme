@@ -34,10 +34,10 @@ h2, h3, h4, h5 {
   color: rgb(212, 209, 209);
 }
 
-
 .hero {
   display: flex;
-  height: 100vh;
+  height: auto;
+  padding: 4rem;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -46,7 +46,7 @@ h2, h3, h4, h5 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .hero-container {
@@ -71,10 +71,20 @@ h2, h3, h4, h5 {
 }
 
 .call-to-action {
+  padding: 5rem 0 2rem 0;
   text-align: center;
   width: 80%;
   margin: auto;
 }
+
+.call-to-action h1, h2 {
+  padding: 1rem;
+}
+
+.call-to-action p {
+  padding: 0.75rem;
+}
+
 
 .cta-button, .card-button {
   background-color: transparent;
@@ -114,10 +124,21 @@ h2, h3, h4, h5 {
 }
 
 .hero-image img {
-  min-height: 650px;
+  min-height: 500px;
   object-fit: cover;
-  max-width: 350px;
+  max-width: 325px;
   border: 0.5px solid rgba(253, 253, 253, 0.05);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all .4s ease-in-out;
+}
+
+.hero-image img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  max-width: 625px;
 }
 
 .heading-txt {
@@ -201,13 +222,14 @@ h2, h3, h4, h5 {
   max-height: 400px;
 }
 
-.gallery-page-container{
+.gallery-page-container {
   text-align: center;
   background-color: rgb(238, 234, 234);
 }
-.gallery{
-  width:85%;
-  margin:auto;
+
+.gallery {
+  width: 85%;
+  margin: auto;
 }
 
 @media screen and (min-width: 3840px) {
