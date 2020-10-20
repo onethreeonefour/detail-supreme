@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SLK from '../../Images/slk-red.webp'
 import BMW from '../../Images/bmw_m3.webp'
 import SHELBY from '../../Images/shelby.webp'
@@ -6,14 +6,35 @@ import Arrive from '../../Images/arrive.webp'
 import Inspect from '../../Images/inspect.webp'
 import Detailing from '../../Images/detailing.webp'
 import Supra from '../../Images/supra.webp'
-
 import Exterior from '../../Images/exterior.webp'
 import Interior from '../../Images/interior.webp'
 import Protection from '../../Images/protection.webp'
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 function DealPage(props) {
 
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.process-anim', {
+            scrollTrigger: {
+                trigger: '.process-anim',
+                toggleActions: "restart none none reverse",
+            }, autoAlpha: 0, duration: 1, y: -50, stagger: 0.35
+        });
+
+        gsap.from('.services-anim', {
+            scrollTrigger: {
+                trigger: '.services-anim',
+                toggleActions: "restart none none reverse",
+            }, autoAlpha: 0, duration: 1, y: -50, stagger: 0.35
+        });
+
+    }, [])
 
     return (
         <div className="deal-page-container">
@@ -49,7 +70,7 @@ function DealPage(props) {
             </div>
             <h1 className="heading-txt">How It Works</h1>
             <div className="process-container">
-                <div className="process-card align-text-left">
+                <div className="process-card align-text-left process-anim">
                     <div>
                         <h4 className="lighter">1</h4>
                         <br />
@@ -60,7 +81,7 @@ function DealPage(props) {
                         <img src={Arrive} alt="procedure"></img>
                     </div>
                 </div>
-                <div className="process-card align-text-left">
+                <div className="process-card align-text-left process-anim">
                     <div>
                         <h4 className="lighter">2</h4>
                         <br />
@@ -71,7 +92,7 @@ function DealPage(props) {
                         <img src={Inspect} alt="procedure"></img>
                     </div>
                 </div>
-                <div className="process-card align-text-left">
+                <div className="process-card align-text-left process-anim">
                     <div>
                         <h4 className="lighter">3</h4>
                         <br />
@@ -82,7 +103,7 @@ function DealPage(props) {
                         <img src={Detailing} alt="procedure"></img>
                     </div>
                 </div>
-                <div className="process-card align-text-left">
+                <div className="process-card align-text-left process-anim">
                     <div>
                         <h4 className="lighter">4</h4>
                         <br />
@@ -96,21 +117,21 @@ function DealPage(props) {
             </div>
             <h1 className="heading-txt">Our Services</h1>
             <div className="services-container">
-                <div className="services-card">
+                <div className="services-card services-anim">
                     <div className="process-card-image-container">
                         <img src={Exterior} alt='exterior-clean'></img>
                     </div>
                     <h2>Exterior Clean</h2>
                     <p className="services-text">Using pressure controlled washer we clean the exterior of the car but before that happens we inspect the recommended pressure rate and appropriate soaps and solvents.</p>
                 </div>
-                <div className="services-card">
+                <div className="services-card services-anim">
                     <div className="process-card-image-container">
                         <img src={Interior} alt='interior-clean'></img>
                     </div>
                     <h2>Interior Clean</h2>
                     <p className="services-text">Using a special lines of soaps and solvents we carefully clean every spot of your vehicle. Strange smells will be replaced with a fragrance worthy of royalty.</p>
                 </div>
-                <div className="services-card">
+                <div className="services-card services-anim">
                     <div className="process-card-image-container">
                         <img src={Protection} alt='paint-protect'></img>
                     </div>

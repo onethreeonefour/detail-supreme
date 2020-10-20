@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Gallery from 'react-photo-gallery'
 import { photos } from "./Photos";
+
 
 function GalleryPage() {
     return (
