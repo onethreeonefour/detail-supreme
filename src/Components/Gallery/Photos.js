@@ -1,99 +1,82 @@
-import Image01 from '../../Gallery/1.webp'
-import Image02 from '../../Gallery/2.webp'
-import Image03 from '../../Gallery/3.webp'
-import Image04 from '../../Gallery/4.webp'
-import Image05 from '../../Gallery/5.webp'
-import Image06 from '../../Gallery/6.webp'
-import Image07 from '../../Gallery/7.webp'
-import Image08 from '../../Gallery/8.webp'
-import Image09 from '../../Gallery/9.webp'
-import Image10 from '../../Gallery/10.webp'
-import Image11 from '../../Gallery/11.webp'
-import Image12 from '../../Gallery/12.webp'
-import Image13 from '../../Gallery/13.webp'
-import Image14 from '../../Gallery/14.webp'
-import Image15 from '../../Gallery/15.webp'
-import Image16 from '../../Gallery/16.webp'
-
 
 export const photos = [
     {
-        src: Image01,
+        src: 'Gallery/1.webp',
         width: 4,
         height: 3
     },
     {
-        src: Image02,
+        src: 'Gallery/2.webp',
         width: 3,
         height: 2
     },
     {
-        src: Image03,
+        src: 'Gallery/3.webp',
         width: 4,
         height: 3
     },
     {
-        src: Image04,
-        width: 3,
+        src: 'Gallery/4.webp',
+        width: 5,
+        height: 3
+    },
+    {
+        src: 'Gallery/5.webp',
+        width: 5,
+        height: 3
+    },
+    {
+        src: 'Gallery/6.webp',
+        width: 6,
+        height: 3
+    },
+    {
+        src: 'Gallery/7.webp',
+        width: 5,
+        height: 3
+    },
+    {
+        src: 'Gallery/8.webp',
+        width: 5,
+        height: 3
+    },
+    {
+        src: 'Gallery/9.webp',
+        width: 4,
         height: 2
     },
     {
-        src: Image05,
+        src: 'Gallery/10.webp',
         width: 5,
         height: 3
     },
     {
-        src: Image06,
-        width: 5,
-        height: 3
-    },
-    {
-        src: Image07,
-        width: 5,
-        height: 3
-    },
-    {
-        src: Image08,
-        width: 5,
-        height: 3
-    },
-    {
-        src: Image09,
-        width: 4,
-        height: 2
-    },
-    {
-        src: Image10,
-        width: 5,
-        height: 3
-    },
-    {
-        src: Image11,
+        src: 'Gallery/11.webp',
         width: 4,
         height: 3
     },
     {
-        src: Image12,
+        src: 'Gallery/12.webp',
         width: 4,
         height: 3
     },
     {
-        src: Image13,
+        src: 'Gallery/13.webp',
         width: 4,
         height: 3
     },
     {
-        src: Image14,
+        src: 'Gallery/14.webp',
         width: 5,
         height: 3
     },
     {
-        src: Image15,
+        src: 'Gallery/15.webp',
         width: 5,
         height: 3
     },
     {
-        src: Image16,
+        src: 'Gallery/16.webp',
         width: 4,
         height: 3
     },

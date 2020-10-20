@@ -1,24 +1,25 @@
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h1, button {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 h2, h3, h4, h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .align-text-left {
@@ -31,7 +32,7 @@ h2, h3, h4, h5 {
 
 .lighter {
   font-weight: light;
-  color: rgb(212, 209, 209);
+  color: rgb(104, 104, 104);
 }
 
 .hero {
@@ -85,7 +86,6 @@ h2, h3, h4, h5 {
   padding: 0.75rem;
 }
 
-
 .cta-button, .card-button {
   background-color: transparent;
   color: white;
@@ -94,7 +94,7 @@ h2, h3, h4, h5 {
   margin: 0.5rem;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .cta-button:hover, .card-button:hover {
@@ -116,10 +116,10 @@ h2, h3, h4, h5 {
 
 .hero-image-grid {
   display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .hero-image {
-  display: inline;
   max-height: 500px;
 }
 
@@ -131,7 +131,7 @@ h2, h3, h4, h5 {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .hero-image img:hover {
@@ -142,14 +142,14 @@ h2, h3, h4, h5 {
 }
 
 .heading-txt {
-  color: black;
+  color: rgb(247, 247, 247);
   padding: 4rem;
   font-size: 4rem;
 }
 
 .deal-page-container {
   text-align: center;
-  background-color: rgb(238, 234, 234);
+  background-color: rgb(5, 5, 5);
 }
 
 .deal-card-container {
@@ -179,6 +179,7 @@ h2, h3, h4, h5 {
 
 .deal-card img {
   max-width: 400px;
+  max-height: 200px;
 }
 
 .card-premium-button {
@@ -190,7 +191,7 @@ h2, h3, h4, h5 {
 .card-premium-button:hover {
   background-color: white;
   border-color: white;
-  color: black
+  color: black;
 }
 
 .process-container {
@@ -205,7 +206,8 @@ h2, h3, h4, h5 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1.5rem;
-  background-color: white;
+  background-color: rgb(32, 32, 32);
+  color: white;
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -222,14 +224,164 @@ h2, h3, h4, h5 {
   max-height: 400px;
 }
 
+.services-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.services-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-text {
+  border-left: 2px solid gold;
+  text-align: left;
+  padding-left: 1rem;
+}
+
 .gallery-page-container {
   text-align: center;
-  background-color: rgb(238, 234, 234);
+  background-color: rgb(5, 5, 5);
 }
 
 .gallery {
   width: 85%;
   margin: auto;
+  background-color: rgba(32, 32, 32, 0.473);
+  padding: 0.5rem;
+}
+
+.testimonials-page-container {
+  text-align: center;
+  background-color: rgb(5, 5, 5);
+}
+
+.testimonials-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonials-card {
+  color: white;
+  padding: 2rem;
+  background-color: rgb(24, 24, 24);
+}
+
+.testimonials-card img {
+  border-radius: 3px;
+}
+
+.testimonials-card p {
+  width: 65%;
+  margin: auto;
+  background-color: rgb(41, 41, 41);
+  padding: 2rem;
+}
+
+.quote {
+  font-size: 2.5rem;
+  color: goldenrod;
+}
+
+.contact-container {
+  text-align: center;
+  background-color: rgb(5, 5, 5);
+}
+
+.contact-form-container {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 85%;
+  margin: auto;
+  background-color: rgb(32, 32, 32);
+}
+
+.about-us {
+  padding: 2rem;
+}
+
+.about-us-img {
+  width: auto;
+  max-height: 450px;
+}
+
+.about-us p {
+  text-align: left;
+  padding: 1rem;
+  border-left: 2px solid goldenrod;
+}
+
+.contact-container {
+  padding-bottom: 5rem;
+}
+
+.contact-form-input {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contact-form-input label {
+  display: block;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-form-input input {
+  color: white;
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.623);
+}
+
+.contact-form-input textarea {
+  color: black;
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px black;
+  font-size: 1.25rem;
+}
+
+.button-container {
+  padding: 1.5rem;
+}
+
+.contact-form-input button {
+  margin: auto;
+  width: 250px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-form-input button:hover {
+  background-color: gold;
+  border: 2px solid gold;
+  color: black;
+}
+
+.detail-supreme {
+  color: gold;
 }
 
 @media screen and (min-width: 3840px) {
@@ -237,11 +389,100 @@ h2, h3, h4, h5 {
     min-height: 850px;
     max-width: 650px;
   }
+  .process-container, .deal-card-container, .services-container, .gallery, .testimonials-container, .contact-form-container {
+    width: 60%;
+  }
+  .process-card-image-container {
+    overflow: hidden;
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 2560px) {
   .hero-image img {
-    min-height: 700px;
+    min-height: 500px;
     max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-form-container, .testimonials-container, .services-container, .process-container, .deal-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-us-img {
+    width: 500px;
+  }
+  .services-container, .deal-card-container {
+    width: 60%;
+    gap: 2rem;
+  }
+  .process-card-image-container img {
+    width: 600px;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-image-1 {
+    display: block;
+  }
+  .hero-image img {
+    min-height: 450px;
+    max-width: 700px;
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 0.4s ease-in-out;
+  }
+  .hero-image img:hover {
+    max-width: 700px;
+  }
+  .hero-image-grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .process-card {
+    grid-template-columns: auto;
+  }
+  .heading-txt {
+    font-size: 2.75rem;
+  }
+  .process-container, .deal-card-container, .services-container, .gallery, .testimonials-container, .contact-form-container {
+    width: 90%;
+  }
+  .about-us-img {
+    width: 240px;
+  }
+  .testimonials-card img {
+    width: 90%;
+  }
+  .deal-card-container img {
+    width: 250px;
+  }
+  .process-card-image-container img {
+    height: 240px;
+    object-fit: cover;
+  }
+  .contact-form-input textarea {
+    width: 250px;
+    height: 200px;
+  }
+  .services-container img {
+    max-width: 450px;
+    max-height: 450px;
+  }
+  .hero-image img {
+    min-height: 300px;
+    max-width: 325px;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+  }
+  .hero-image img:hover {
+    max-width: 325px;
   }
 }
