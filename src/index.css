@@ -345,9 +345,8 @@ h2, h3, h4, h5 {
 .contact-form-input input {
   color: white;
   font-size: 1.25rem;
-  background-color: transparent;
   border: 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.623);
+  border-radius: 3px;
 }
 
 .contact-form-input textarea {
