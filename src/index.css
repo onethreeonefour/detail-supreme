@@ -346,11 +346,12 @@ h2, h3, h4, h5 {
   font-size: 1.25rem;
   border: 0;
   border-radius: 3px;
+  width: 75%;
 }
 
 .contact-form-input textarea {
   color: black;
-  width: 500px;
+  width: 75%;
   height: 300px;
   border-radius: 5px;
   box-shadow: 4px 4px 10px black;
@@ -465,10 +466,6 @@ h2, h3, h4, h5 {
   .process-card-image-container img {
     height: 240px;
     object-fit: cover;
-  }
-  .contact-form-input textarea {
-    width: 250px;
-    height: 200px;
   }
   .services-container img {
     max-width: 450px;
