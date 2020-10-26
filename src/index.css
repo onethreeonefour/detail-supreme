@@ -266,10 +266,11 @@ h2, h3, h4, h5 {
 }
 
 .testimonials-container {
-  width: 85%;
+  width: 95%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 }
 
 .testimonials-card {
@@ -280,11 +281,16 @@ h2, h3, h4, h5 {
 
 .testimonials-card img {
   border-radius: 3px;
+  height: 375px;
+  width: 375px;
+  object-fit: cover;
 }
 
 .testimonials-card p {
-  width: 65%;
+  width: 80%;
   margin: auto;
+  text-align: left;
+  border-left: gold 2px solid;
   background-color: rgb(41, 41, 41);
   padding: 2rem;
 }

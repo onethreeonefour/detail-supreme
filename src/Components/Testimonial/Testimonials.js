@@ -31,7 +31,7 @@ function Testimonials() {
                 <img src={data.src} alt="avatar" className="testimonials-card-image-anim"></img>
             </div>
             <h2>{data.name}</h2>
-            <p className="testimonials-card-quote-anim"><span className="quote">"</span>{data.quote}</p>
+            <p className="testimonials-card-quote-anim">{data.quote}</p>
         </div>
     })
 

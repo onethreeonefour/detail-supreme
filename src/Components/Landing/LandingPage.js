@@ -17,8 +17,6 @@ function LandingPage() {
     const deal = useRef('');
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
-
-
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
